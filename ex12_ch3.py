@@ -7,7 +7,7 @@ Created on Thu May 10 15:34:22 2018
 """
 
 #step1: get input for principal amount
-principal_amount = int(input("Enter the principal amount: "))
+principal_amount = int(input("Enter the principal amount: $ "))
 
 #step2: get input for interest rate as a percent (ie, "15" and not ".15")
 interest_rate = float(input("Enter the interest rate: "))
