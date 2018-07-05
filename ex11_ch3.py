@@ -7,7 +7,7 @@ Created on Thu May 10 15:34:22 2018
 """
 
 #step1: get input on amount of money in euros
-amount_of_euros = float(input("How much money in euros do you have? "))
+amount_of_euros = int(input("How much money in euros do you have? "))
 
 #step2: get input about the exchange rate
 euro_exchange_rate = float(input("What is the current euro exchange rate? "))
