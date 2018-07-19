@@ -10,7 +10,6 @@ import math
 
 #step1: get inputs from user on the temperature and whether the temp is in C or F
 temp = float(input("Enter the temperature: "))
-
 temp_type = input("Is that temperature in Celsius or Fahrenheit? Enter C for Celsius or F for Fahrenheit: ")
 
 #step2: write first conditional to convert C to F
@@ -22,4 +21,3 @@ if "C" in temp_type:
 elif "F" in temp_type:
     fahrenheit_to_celsius = math.ceil(temp - 32) * 5 / 9
     print(f"The temperature in Celsius is {fahrenheit_to_celsius} degrees.")
-
