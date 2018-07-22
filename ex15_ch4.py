@@ -18,6 +18,5 @@ password = input("Enter your password: ")
 #step4: write if statement to verify user password with known password
 if password == KNOWN_PASSWORD:
     print("Welcome")
-
 else:
     print("I don't know you.")
