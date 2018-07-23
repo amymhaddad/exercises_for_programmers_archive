@@ -6,24 +6,19 @@ Created on Thu May 10 15:34:22 2018
 @author: amyhaddad
 """
 
-#step1: get input: number of people eating pizza?
-pizza_eaters = int(input("How many people are eating pizza? "))
+#step1: get input
+number_people = int(input("Enter the number of people: "))
+total_pizzas = int(input("Enter the total number of pizzas: "))
+slices_per_pizza = int(input("Enter the slices per pizza: "))
 
-#step2: get input: how many pizzas are there?
-total_pizzas = int(input("How many pizzas do you have? "))
+#step2: calculate the total slices of pizza
+total_slices = total_pizzas * slices_per_pizza
 
-#step3: get input: how many slices are in a pizza?
-slices_per_pizza = int(input("How many slices are in a pizza? "))
+#step3: calucate the slices per person
+slices_per_person = total_slices // number_people
 
-#step4: write calculation to see how many total slices there are
-total_pizza_slices = total_pizzas * slices_per_pizza
-
-#step5: write calculation to divide the pizza slices evenly among the total people
-slices_per_person = total_pizza_slices / pizza_eaters
-
-print(f"Each person can have {int(slices_per_person)} pieces of pizza.")
-
-#step6: write calculation to determine left over slices of pizza
-leftover_pizza_slices = total_pizza_slices % pizza_eaters
-
-print(f"There will be {leftover_pizza_slices} leftover slices of pizza.")
+#step4: write out how much pizza everyone gets using if-else to account for pluralization
+if slices_per_person == 1:
+    print(f"Each person gets one piece of pizza.")
+else: 
+    print(f"Each person gets {slices_per_person} pieces of pizza.")
