@@ -7,5 +7,5 @@ Created on Tue Jun  5 15:29:27 2018
 """
 
 
-name=input("What is your name?")
+name = input("What is your name? ")
 print(f"Hello, {name}, nice to meet you!")
