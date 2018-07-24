@@ -6,17 +6,17 @@ Created on Tue Jun  5 15:36:53 2018
 @author: amyhaddad
 """
 
-number_1 = input("What is the first number? ")
-number_2 = input("What is the second number? ")
+number_1 = int(input("What is the first number? "))
+number_2 = int(input("What is the second number? "))
 
-sum = int(number_1) + int(number_2)
+sum = (number_1) + (number_2)
 print(f"{number_1} + {number_2} = {sum}")
 
-difference = int(number_1) - int(number_2)
+difference = (number_1) - (number_2)
 print(f"{number_1} - {number_2} = {difference}")
 
-product=int(number_1) * int(number_2)
+product= (number_1) * (number_2)
 print(f"{number_1} * {number_2} = {product}")
 
-quotient = int(number_1) % int(number_2)
+quotient = (number_1) % (number_2)
 print(f"{number_1} / {number_2} = {quotient}")
