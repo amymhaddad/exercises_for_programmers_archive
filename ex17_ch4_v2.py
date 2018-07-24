@@ -6,16 +6,19 @@ Created on Thu May 10 15:34:22 2018
 @author: amyhaddad
 """
 
-#step1: write out constant
+#step1: write out constants
 BAC_ILLEGAL_TO_DRIVE = 0.08
 
-#step2: get input
-gender = input("Enter your gender, male or female: ")
-weight = int(input("Enter your weight in pounds: "))
-time = int(input("Enter the number of hours since your last drink. If it's been less than one hour enter 1: "))
-alcohol = int(input("Enter the amount of alcohol in ounces: "))
+#step1: state constant
+BAC = 0.08
 
-#step3: set up two conditionals based on male or female response (since the ratio for the BAC equation depends on gender)
+#step2: get inputs
+weight = float(input("Enter your weight in pounds: "))
+alcohol = int(input("Enter the amount of alcohol you've had in ounces: "))
+time = int(input("Enter the number of hours since your last drink. If it's less than one hour, enter \"1\": "))
+gender = input("Enter your gender: type \"male\" or \"female\": ")
+
+#step3: set up two conditionals: one for male and one for female
 if gender == "male": 
     male_bac = (alcohol * 5.14 / weight * .73) - .015 * time
     if male_bac >= BAC:
