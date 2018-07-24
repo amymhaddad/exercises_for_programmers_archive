@@ -20,12 +20,12 @@ slices_per_person = total_slices // number_people
 #step4: calculate the leftover pizza
 leftover_pizza = total_slices % number_people
 
-#step5: write conditional if there is leftover pizza
-if leftover_pizza >= 1:
-    print(f"There are {leftover_pizza} slices of pizza leftover.")
-
-#step6: write out how much pizza everyone gets using if-else to account for pluralization
+#step5: write out how much pizza everyone gets using if-else to account for pluralization
 if slices_per_person == 1:
     print(f"Each person gets one piece of pizza.")
 else: 
     print(f"Each person gets {slices_per_person} pieces of pizza.")
+    
+#step6: write conditional if there is leftover pizza
+if leftover_pizza >= 1:
+    print(f"There are {leftover_pizza} slices of pizza leftover."
