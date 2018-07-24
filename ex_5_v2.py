@@ -18,5 +18,5 @@ print(f"{number_1} - {number_2} = {difference}")
 product= (number_1) * (number_2)
 print(f"{number_1} * {number_2} = {product}")
 
-quotient = (number_1) % (number_2)
+quotient = (number_1) / (number_2)
 print(f"{number_1} / {number_2} = {quotient}")
