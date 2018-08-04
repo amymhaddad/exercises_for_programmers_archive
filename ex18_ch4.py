@@ -10,14 +10,13 @@ import math
 
 #step1: get inputs from user on the temperature and whether the temp is in C or F
 temp = float(input("Enter the temperature: "))
-temp_type = input("Is that temperature in Celsius or Fahrenheit? Enter C for Celsius or F for Fahrenheit: ")
+temp_type = input("Is that temperature in Celsius or Fahrenheit? Enter \"C\" for Celsius or \"F\" for Fahrenheit: ")
+normalized_temp_type = temp_type.lower()
 
-#step2: write first conditional to convert C to F
-if "C" in temp_type:
+#step2: write conditionals to convert temperature to the opposite that user entered 
+if normalized_temp_type == "c":
     celsius_to_fahrenheit = math.ceil(temp * 9 / 5) + 32
     print(f"The temperature in Fahrenheit is {celsius_to_fahrenheit} degrees.")
-
-#step3: write second conditional to convert F to C
-elif "F" in temp_type:
+else:
     fahrenheit_to_celsius = math.ceil(temp - 32) * 5 / 9
     print(f"The temperature in Celsius is {fahrenheit_to_celsius} degrees.")
