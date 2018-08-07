@@ -15,9 +15,4 @@ square_feet = length * width
 print(f"The area of the room is {square_feet} square feet.")
 
 square_meters = square_feet * 0.092903
-print(f"The area of the room is {int(square_meters)} square meteres.")
-
-
-
-
-
+print(f"The area of the room is {square_meters} square meters.")
