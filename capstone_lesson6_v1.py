@@ -6,15 +6,14 @@ Created on Thu May 10 15:34:22 2018
 @author: amyhaddad
 """
 
-print("One way to solve: ")
-#step 1: state number of minutes
-total_minutes = 121
+#step1: given variable
+total_minutes = 123
 
-#step 2: convert number of minutes to hours
-number_of_hours = round(total_minutes / 60)
-print("Hours:", number_of_hours)
+#step2: calculate total hours
+total_hours = total_minutes // 60
 
-#step 3: convert remainder from conversion to minutes
-remainder_minutes = round(.0166 * 60)
-print("Minutes:", remainder_minutes)
+#step3: calculate minutes
+leftover_minutes = total_minutes % 60
 
+#step4: print output
+print(f"Hours:\n{total_hours}\nMinutes:\n{leftover_minutes}")
