@@ -36,12 +36,11 @@ item2_total = item2_price * item2_quantity
 
 #item3 calculation
 item3_total = item3_price * item3_quantity
-
 #add calculation for each of the three items together
 subtotal = item1_total + item2_total + item3_total
 
 #step8: create calculation to determine sales tax
-total_tax = float(SALES_TAX/100) * subtotal
+total_tax = (SALES_TAX/100) * subtotal
 
 #step9: add sales tax to subtotal
 grand_total = total_tax + subtotal
