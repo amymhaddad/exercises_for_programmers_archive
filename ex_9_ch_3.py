@@ -13,6 +13,6 @@ ceiling_width = int(input("What is the width of the ceiling in feet? "))
 
 area_of_ceiling = ceiling_length * ceiling_width
 
-paint_gallons_needed = math.floor(350/area_of_ceiling)
+paint_gallons_needed = math.ceil(350/area_of_ceiling)
 
 print(f"You'll need to purchase {paint_gallons_needed} gallons of paint to cover {area_of_ceiling} square feet.")
