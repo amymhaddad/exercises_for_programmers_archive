@@ -27,5 +27,5 @@ else:
     print(f"Each person gets {slices_per_person} pieces of pizza.")
 
 #step6: write conditional if there is leftover pizza
-if leftover_pizza >= 1:
+if leftover_pizza > 1:
     print(f"There are {leftover_pizza} slices of pizza leftover.")
