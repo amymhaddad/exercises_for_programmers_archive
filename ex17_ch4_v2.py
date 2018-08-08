@@ -25,7 +25,8 @@ if gender == "male":
         print("You're not able to drive legally.")
     else:
         print("You're able to drive legally, but be careful.")   
-elif gender == "female":
+        
+else:
     female_bac = (alcohol * 5.14 / weight * .66) - .015 * time
     if female_bac >= BAC:
         print("You're not able to drive legally.")
