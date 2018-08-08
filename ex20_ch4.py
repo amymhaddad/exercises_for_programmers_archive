@@ -8,7 +8,7 @@ Created on Thu May 10 15:34:22 2018
 
 #step1: state constants
 EC_RES_TAX =   0.005
-DUNN_RES_TAX = 0.004
+DUNN_RES_TAX =   0.004
 IL_SALES_TAX = 8 
 
 #step1: get input from user
