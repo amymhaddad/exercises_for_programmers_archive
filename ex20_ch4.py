@@ -18,9 +18,9 @@ normalized_state = state.lower()
 
 #step2: set up conditionals
 if normalized_state == "wi":
-    country = input("Enter the county you live in: ")
-    normalized_country = country.lower()
-    if normalized_country == "eau clair":
+    county = input("Enter the county you live in: ")
+    normalized_county = county.lower()
+    if normalized_county == "eau clair":
         total_amount_ecres = order_amount + EC_RES_TAX
         print("You have an extra tax of " + str(EC_RES_TAX) + ". So the total order amount is ${:.2f}.".format(total_amount_ecres))
     elif county == "dunn":
