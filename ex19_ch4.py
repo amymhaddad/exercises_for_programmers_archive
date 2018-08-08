@@ -18,14 +18,10 @@ total_height = (feet_height * 12) + inches_height
 #step3: write BMI calculation to use in conditional statements
 bmi = (weight / (total_height * total_height)) * 703
 
-#step4: write first conditional
+#step4: write three conditionals
 if bmi >= 18.5 and bmi <= 25:
     print("Your BMI is {:.1f}".format(bmi)+". You're within the ideal weight range.")
-
-#step5: write second conditional:
 elif bmi > 25:
     print("Your BMI is {:.1f}".format(bmi)+". You're overweight and should see your doctor.")
-
-#step6: write third conditional:
 else: 
     print("Your BMI is {:.1f}".format(bmi)+". You're underweight.")
