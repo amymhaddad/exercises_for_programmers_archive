@@ -6,35 +6,30 @@ Created on Sun May 27 11:00:59 2018
 @author: amyhaddad
 """
 
-print("This is from page 16.")
-number_one = input("What is the first number? ")
+import math 
 
-print(f"This is the first number: {number_one}.")
+#step1: write input statement asking for one number
+first_number = int(input("This is your first number: "))
 
-number_two = input("What is the number_two? ")
+#step2: write input statement asking for second number
+second_number = int(input("This is your second number: "))
 
-print(f"This is the second number: {number_two}.")
+#step2: create variable "sum" and write an equation that adds the two numbers together and print equation and solution  
+sum = first_number + second_number 
 
+print(f"{first_number} + {second_number} = {sum}")
 
-sum = int(number_one)+int(number_two)
-print(f"{number_one} + {number_two} = {sum}")
+#step3: create variable "difference" and write an equation that subtracts the two numbers and print the equation and solution
+difference = first_number - second_number
 
-difference = int(number_one) - int(number_two)
-print(f"{number_one} - {number_two} = {difference}")
+print(f"{first_number} - {second_number} = {difference}")
 
-product = int(number_one) * int(number_two)
-print(f"{number_one} * {number_two} = {product}")
+#step4: create variable "product" and write an equation that multiplies the two numbers together; print equation and ssolution
+product = first_number * second_number
 
-quotient = int(number_one) / int(number_two)
-print(f"{number_one} / {number_two} = {int(quotient)}")
+print(f"{first_number} * {second_number} = {product}")
 
+#step5: create variable "quotient" and write an equation that divides the two numbers; print equation and solution
+quotient = first_number / second_number
 
-
-
-
-#print("10 + 5=", 15)
-#print("10 - 5=", 5)
-#print("10 * 5=", 50)
-#print("10 / 5=", 2)
-
-
+print(f"{first_number} / {second_number} = {math.ceil(quotient)}")
