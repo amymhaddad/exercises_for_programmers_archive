@@ -5,7 +5,6 @@ Created on Thu May 10 15:34:22 2018
 
 @author: amyhaddad
 """
-
 #step1: create an empty list
 new_list = []
 
@@ -16,4 +15,6 @@ num = 5
 for value in range(num):
     numbers = int(input("Enter a number: "))
     new_list.append(numbers)
-print("The sum is", sum(new_list),".")
+total = sum(new_list)
+
+print(f"The sum is {total}.")
