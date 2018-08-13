@@ -9,12 +9,12 @@ Created on Thu May 10 15:34:22 2018
 # Step 1: import random
 import random
 
-# Step 2: create a list with answers and tell Python to shuffle them
-answers = ['yes', 'no', 'maybe', 'ask again later']
-random.shuffle(answers)
+# Step 2: create constant and randomize the list
+ANSWERS = ['yes', 'no', 'maybe', 'ask again later']
+random.shuffle(ANSWERS)
 
 # Step 3: create a loop that asks user for their question and print a response 
-for answer in answers:
+for answer in ANSWERS:
     question = input("What's your question? ")
     print(answer)
     
