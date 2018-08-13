@@ -9,7 +9,7 @@ Created on Thu May 10 15:34:22 2018
 # Step 1: import random
 import random
 
-# Step 2: create a list with all of the answer possibilities and tell Python to shuffle them
+# Step 2: create a list with answers and tell Python to shuffle them
 answers = ['yes', 'no', 'maybe', 'ask again later']
 random.shuffle(answers)
 
@@ -17,3 +17,4 @@ random.shuffle(answers)
 for answer in answers:
     question = input("What's your question? ")
     print(answer)
+    
