@@ -6,22 +6,20 @@ Created on Thu May 10 15:34:22 2018
 @author: amyhaddad
 """
 
-age = 15
+# Step 1: write constant
+AGE = 11
 
-if age < 2:
+# Step 2: write conditional
+if AGE < 2:
     print("You're a baby.")
-
-elif age == 2 or age < 4:
+elif AGE >= 2 and AGE < 4:
     print("You're a toddler.")
-
-elif age == 4 or age < 13:
+elif AGE >= 4 and AGE < 13:
     print("You're a kid.")
-
-elif age == 13 or age < 20: 
+elif AGE >= 13 and AGE < 20: 
     print("You're a teen.")
-
-elif age == 20 or age < 65:
+elif AGE >= 20 and AGE < 65:
     print("You're an adult.")
-
 else:
     print("You're a senior.")
+    
