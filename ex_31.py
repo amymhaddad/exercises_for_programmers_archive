@@ -11,7 +11,7 @@ LOW_INTENSITY = 55
 HIGH_INTENSITY = 95
 INTERVAL = 5
 
-# Step 2: get input from user 
+# Step 2: get input from user
 age = int(input("Enter your age: "))
 resting_heart_rate = int(input("Enter your resting heart rate: "))
 
