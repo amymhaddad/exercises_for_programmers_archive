@@ -25,5 +25,5 @@ names_lowercase.remove(employee_removal)
 
 # Step 5: print list of remaining employees
 print("These are the remaining employees:")
-for name in names_lowercase: 
+for name in names_lowercase:
     print(name.capitalize())
