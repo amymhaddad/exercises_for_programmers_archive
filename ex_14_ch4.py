@@ -19,7 +19,7 @@ if normalized_state == "wi":
     tax = (WI_TAX / 100) * order_amount
     print("You're going to pay ${:.2f}".format(tax) + " in tax.")
     subtotal = order_amount + tax
-    print("Your order total is ${:.2f}.".format(order_amount))
-    print("Your subtotal is ${:.2f}.".format(subtotal))
+    print("Your order total is ${:.2f}, and with tax your subtotal is ${:.2f}.".format(order_amount, subtotal))
 else:
     print(f"Your subtotal is ${order_amount}.")
+    
