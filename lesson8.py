@@ -6,20 +6,23 @@ Created on Thu May 10 15:34:22 2018
 @author: amyhaddad
 """
 
-a = "Eat Work Play Sleep repeat"
+test_string = "Eat Work Play Sleep repeat"
 
-print("Here's option 1:")
-index_work = a[4:8:1] + "ing"
-index_play = a[9:13:1] + "ing"
+# Option 1: using index
+first_word_test_string = test_string[4:8]+"ing"
+second_word_test_string = test_string[9:13]+"ing"
+total_word_test_string = first_word_test_string.lower() + ' ' + second_word_test_string.lower()
+print(total_word_test_string)
 
-print(index_work.lower(), index_play.lower())
+# Option 2: spliting the string and indexing it
+new_phrase = test_string.split(' ')
+word_one_new_phrase = new_phrase[1]+"ing"
+word_two_new_phrase = new_phrase[2]+"ing"
+both_words_new_phrase = word_one_new_phrase.lower() + ' ' + word_two_new_phrase.lower()
+print(both_words_new_phrase)
 
-print("Here's option 2:")
-working_playing = a.replace("Eat Work Play Sleep repeat", "working playing")
-print(working_playing)
-
-print("Here's option 3:")
-a1 = a.replace("Eat ", "")
-a2 = a1.replace(" Sleep repeat", "").lower()
-a3 = a2.replace("work play", "working playing")
-print(a3)
+# Option 3: using replace
+task_1 = test_string.replace("Eat Work", "working")
+task_2 = task_1.replace("Play", "playing")
+task_3 = task_2.replace("Sleep repeat", " ")
+print(task_3)
