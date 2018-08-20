@@ -21,7 +21,7 @@ ceiling_width = int(input("What is the width of the ceiling? "))
 ceiling_area = ceiling_length * ceiling_width
 
 # Step 5: make calculation to find out how many gallons of paint are needed to paint the ceiling's area
-paint_gallons_needed = math.ceil(ceiling_area/GALLONS_PER_SQ_FT)
+paint_gallons_needed = math.ceil(ceiling_area / GALLONS_PER_SQ_FT)
 
 # Step 6: create statement to show number of gallons of paint needed to paint ceiling
 print(f"You'll need {paint_gallons_needed} gallons of paint to paint {ceiling_area} square feet.")
