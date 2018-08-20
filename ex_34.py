@@ -6,24 +6,27 @@ Created on Thu May 10 15:34:22 2018
 @author: amyhaddad
 """
 
-# Step 1: create a list of names
-names = ['Theo', 'Tom', 'Paul', 'Sam', 'Sally']
+# Step 1: create list of names and get length of list
+employee_names = ['jack smith', 'jill jones', 'pam jackson', 'sally collins', 'tim goodwin']
 
-# Make this list lowercase
-names_lowercase = [names.lower() for names in ['Theo', 'Tom', 'Paul', 'Sam', 'Sally']]
+total_employees = len(employee_names)
 
-# Step 2: use loop to print each name from list
-print("There are five employees:")
-for name in names_lowercase:
-    print(name.capitalize())
+# Step 2: print the total number of employees and print their names
+print(f"There are {total_employees} employees: ")
+for name in employee_names:
+    print(name.title())
 
-# Step 3: get input on employee to remove
-employee_removal = input("Which employee needs to be removed? ")
+print("\n")
 
-# Step 4: remove employee from list
-names_lowercase.remove(employee_removal)
+# Step 3: get user input on employee removal and remove employee
+employee_removal = input("Which employee should I remove? ")
+normalized_employee_removal = employee_removal.lower()
 
-# Step 5: print list of remaining employees
-print("These are the remaining employees:")
-for name in names_lowercase:
-    print(name.capitalize())
+employee_names.remove(normalized_employee_removal)
+
+print("\n")
+
+# Step 5: print the remaining employees
+print(f"There are {total_employees} employees remaining: ")
+for name in employee_names:
+    print(name.title())
