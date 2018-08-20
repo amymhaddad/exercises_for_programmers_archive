@@ -9,15 +9,15 @@ Created on Thu May 10 15:34:22 2018
 test_string = "Eat Work Play Sleep repeat"
 
 # Option 1: using index
-first_word_test_string = test_string[4:8]+"ing"
-second_word_test_string = test_string[9:13]+"ing"
+first_word_test_string = test_string[4:8] + "ing"
+second_word_test_string = test_string[9:13] + "ing"
 total_word_test_string = first_word_test_string.lower() + ' ' + second_word_test_string.lower()
 print(total_word_test_string)
 
 # Option 2: spliting the string and indexing it
 new_phrase = test_string.split(' ')
-word_one_new_phrase = new_phrase[1]+"ing"
-word_two_new_phrase = new_phrase[2]+"ing"
+word_one_new_phrase = new_phrase[1] + "ing"
+word_two_new_phrase = new_phrase[2] + "ing"
 both_words_new_phrase = word_one_new_phrase.lower() + ' ' + word_two_new_phrase.lower()
 print(both_words_new_phrase)
 
