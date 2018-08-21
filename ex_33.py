@@ -9,12 +9,12 @@ Created on Thu May 10 15:34:22 2018
 # Step 1: import random
 import random
 
-# Step 2: create constant and randomize the list
-ANSWERS = ['yes', 'no', 'maybe', 'ask again later']
-random.shuffle(ANSWERS)
+# Step 2: create a list of answer possibilities
+answers = ['Yes', 'No', 'Maybe', 'Ask again later']
 
-# Step 3: create a loop that asks user for their question and print a response 
-for answer in ANSWERS:
-    question = input("What's your question? ")
-    print(answer)
-    
+# Step 3: write a loop
+for question in input("What's your question? "):
+    random_number = random.randint(0, len(answers)-1)
+    magic_eight_response = answers[random_number]
+
+print(f"{magic_eight_response}")
