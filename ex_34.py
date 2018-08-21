@@ -6,29 +6,35 @@ Created on Thu May 10 15:34:22 2018
 @author: amyhaddad
 """
 
-# Step 1: create list of names and get length of list
-employee_names = ['jack smith', 'jill jones', 'pam jackson', 'sally collins', 'tim goodwin']
+# Step 1: create list of names and find length of list
+employee_list = ['john johns', 'mary kay', 'sue smith', 'paul haddad', 'nina jones']
 
-total_employees = len(employee_names)
+total_employees = len(employee_list)
 
-# Step 2: print the total number of employees and print their names
-print(f"There are {total_employees} employees: ")
+# Step 2: print total names, then write a for loop to print all employee names
+print(f"There are {total_employees} total employees: ")
+for employee in employee_list:
+    print(employee.title())
 
-for name in employee_names:
-    print(name.title())
-
-print("\n")
-
-# Step 3: get user input on employee removal and remove employee
+print('\n')
+        
+# Step 3: ask user which employee to remove and remove employee from list
 employee_to_remove = input("Which employee should I remove? ")
 normalized_employee_to_remove = employee_to_remove.lower()
 
-employee_names.remove(normalized_employee_to_remove)
+if normalized_employee_to_remove not in employee_list:
+    print("Error: name not found.")
+    sys.exit()
 
-print("\n")
+if normalized_employee_to_remove in employee_list:
+    employee_list.remove(normalized_employee_to_remove)
 
-# Step 5: print the remaining employees
-print(f"There are {total_employees} employees remaining: ")
+print('\n')
 
-for name in employee_names:
-    print(name.title())
+total_employees = len(employee_list)
+
+# Step 4: print remaining total employees and their names
+print(f"There are {total_employees} remaining employees: ")
+for employee in employee_list:
+    print(employee.title())
+    
