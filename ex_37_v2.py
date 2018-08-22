@@ -6,15 +6,15 @@ Created on Thu May 10 15:34:22 2018
 @author: amyhaddad
 """
 
-# Step 1: create constants
+# Step 1: import random
+import random
+
+# Step 2: create constants
 SPECIAL_CHARACTERS = ["!", "@", "#", "$", "%", "^", "&", "*", "<", ">"]
 
 NUMBERS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 LETTERS = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-
-# Step 2: import random
-import random
 
 # Step 3: create empty string for new password
 new_password = ""
@@ -47,3 +47,4 @@ for total_letter in range(total_letters):
     new_password = new_password + new_letter
 
 print(f"The new password is {new_password}.")
+
