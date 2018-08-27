@@ -11,7 +11,7 @@ user_number_one = int(input("Enter one number: "))
 user_number_two = int(input("Enter a second number: "))
 user_number_three = int(input("Enter a third number: "))
 
-# Step 2: check to see if all the numbers are different. 
+# Step 2: check to see if all the numbers are different
 # If the numbers are different, write another conditional to find the largest number
 if user_number_one != user_number_two and user_number_one != user_number_three and user_number_two != user_number_three:
     if user_number_one > user_number_two and user_number_one > user_number_three:
