@@ -15,6 +15,6 @@ user_rate = int(input("What is the rate of return? "))
 if user_rate <= 0:
     print("That's not valid input.")
     sys.exit()
-else: 
+else:
     time_to_double_investment = 72 / user_rate
     print(f"It'll take you {int(time_to_double_investment)} years to double your investment.")
