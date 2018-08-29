@@ -21,7 +21,7 @@ while active:
 
     if user_message == 'done':
         active = False
-    else: 
+    else:
         user_times.append(user_message)
 
 # Step 3: convert user_times list from string to ints and print the list of numbers
