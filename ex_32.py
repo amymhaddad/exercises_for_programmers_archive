@@ -21,7 +21,7 @@ HIGH = "Your guess is too high. Try again."
 LOW = "Your guess is too low. Try again."
 REPEAT = "Type 'yes' to play again."
 
-# Step 2: create while loop to intiate game 
+# Step 2: create while loop to intiate game
 message = int(input(GAME_LEVEL_PROMPT))
     
 if message == 1:
@@ -45,7 +45,7 @@ if message == 1:
             user_guess_number += 1
         elif level_1_user_guess < create_random_number_level_1:
             print(f"{LOW} {user_guess_number}")
-            user_guess_number += 1        
+            user_guess_number += 1   
 elif message == 2:
     print("Let's start the game.")
     create_random_number_level_2 = random.randint(0, len(LEVEL_2)-1)
@@ -67,7 +67,7 @@ elif message == 2:
             user_guess_number += 1
         elif level_2_user_guess < create_random_number_level_2:
             print(f"{LOW} {user_guess_number}")
-            user_guess_number += 1      
+            user_guess_number += 1 
 else:
     print("Let's start the game.")
     create_random_number_level_3 = random.randint(0, len(LEVEL_3)-1)
@@ -79,7 +79,7 @@ else:
         
         if level_3_user_guess == create_random_number_level_3:
             active = False
-            if user_guess_number ==1:
+            if user_guess_number == 1:
                 print(f"You guessed it in {user_guess_number} guess!")
             else:
                 print(f"You guessed it in {user_guess_number} guesses!")
@@ -89,5 +89,4 @@ else:
             user_guess_number += 1
         elif level_3_user_guess < create_random_number_level_3:
             print(f"{LOW} {user_guess_number}")
-            user_guess_number += 1      
-   
+            user_guess_number += 1
