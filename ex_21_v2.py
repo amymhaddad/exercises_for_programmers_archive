@@ -29,4 +29,3 @@ user_number = input("Please enter the number of the month: ")
 if user_number in MONTHS_TO_NUMBERS:
     convert_number_to_month = MONTHS_TO_NUMBERS[user_number]
     print(f"The name of the month is {convert_number_to_month.capitalize()}.")
-    
