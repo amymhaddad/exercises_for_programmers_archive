@@ -60,13 +60,12 @@ employee_6 = {
 employees = [employee_1, employee_2, employee_3, employee_4, employee_5, employee_6]
 
 for employee in employees:
+    if employee['position'] == 'dba':
+        employee['position'] = "DBA"
+    else: 
+        employee_position = employee['position'].title()
     for employee_details in employee.values():
-        if employee['position'] == 'dba':
-            employee['position'] = "DBA"
-        else: 
-            employee_position = employee['position'].title()
         employee_full_name = employee['first_name'].capitalize() + ' ' + employee['last_name'].capitalize()
         employee_separation_date = employee['separation_date']
         total_employees_details = employee_full_name + ' | ' + employee_position + ' | ' + employee_separation_date
     print(total_employees_details)
-
