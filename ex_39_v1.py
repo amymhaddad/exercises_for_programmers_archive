@@ -15,21 +15,19 @@ Created on Thu May 10 15:34:22 2018
 # for name in sorted_employee_names:
 #     new_list_sorted_employee_names.append(str(name))
 
-
-
 employee_1 = {
     'first_name': 'tou',
     'last_name': 'xiong',
     'position': 'software engineer',
     'separation_date': '2016-10-05',
-} 
+}
 
 employee_2 = {
     'first_name': 'john',
     'last_name': 'johnson',
     'position': 'manager',
     'separation_date': '2016-12-31',
-}  
+}
 
 employee_3 = {
     'first_name': 'michaela',
@@ -67,8 +65,8 @@ for employee in employees:
             employee['position'] = "DBA"
         else: 
             employee_position = employee['position'].title()
-            
         employee_full_name = employee['first_name'].capitalize() + ' ' + employee['last_name'].capitalize()
         employee_separation_date = employee['separation_date']
-        total_employees_details = employee_full_name + ' | ' + employee_position + ' | ' + employee_separation_date  
+        total_employees_details = employee_full_name + ' | ' + employee_position + ' | ' + employee_separation_date
     print(total_employees_details)
+
