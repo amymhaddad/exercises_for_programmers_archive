@@ -26,6 +26,5 @@ def is_anagram(word_1, word_2):
             print(f"\'{word_1}\' and \'{word_2}\' are anagrams.")
     else:
         print(f"\'{word_1}\' and \'{word_2}\' are not anagrams.")
-
         
 user_input = is_anagram(user_string_1, user_string_2)
