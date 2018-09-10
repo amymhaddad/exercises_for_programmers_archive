@@ -14,7 +14,7 @@ user_string_1 = input("Enter string one: ")
 user_string_2 = input("Enter string two: ")
 
 # Step 3: write a function to see if the words are anagrams
-def is_anagram (word_1, word_2):
+def is_anagram(word_1, word_2):
     """Compare two strings to determine if they are anagrams"""
     word_1_length = len(word_1)
     word_2_length = len(word_2)
@@ -27,4 +27,5 @@ def is_anagram (word_1, word_2):
     else:
         print(f"\'{word_1}\' and \'{word_2}\' are not anagrams.")
 
+        
 user_input = is_anagram(user_string_1, user_string_2)
