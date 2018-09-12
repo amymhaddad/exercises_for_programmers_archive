@@ -6,7 +6,8 @@ Created on Thu May 10 15:34:22 2018
 @author: amyhaddad
 """
 
-import math 
+import math
+
 
 def calc_months_until_paid_off(credit_card_balance, apr, monthly_payment):
     """Write a function to determine the number of months until credit card is paid off"""
