@@ -19,4 +19,4 @@ while True:
         break
     else:
         contestants.append(contestant_name)
-        
+ 
