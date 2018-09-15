@@ -6,7 +6,6 @@ Created on Thu May 10 15:34:22 2018
 @author: amyhaddad
 """
 
-
 # Import string and add constants
 import string  
 EMPLOYEE_ID_LENGTH = 7
