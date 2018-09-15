@@ -6,6 +6,7 @@ Created on Thu May 10 15:34:22 2018
 @author: amyhaddad
 """
 
+
 # Import string and add constants
 import string  
 EMPLOYEE_ID_LENGTH = 7
@@ -27,8 +28,6 @@ normalized_employee_id = employee_id.lower()
 
 # Step 2: write first function to get valid first name
 def first_name(f_name):
-
-    
     """Get input on first name and see if it's valid"""
     import sys
     
@@ -44,8 +43,6 @@ first_name(normalized_f_name)
 
 # Step 3: write second function to get user's last name
 def last_name(l_name):
-
-
     """Get input on last name and see if it's valid"""
     import sys
 
@@ -55,17 +52,13 @@ def last_name(l_name):
     
     if len(l_name) == 1:
         print(f"\'{l_name}\' is not a valid last name. It's too short.")
-    
+
 
 last_name(normalized_l_name)
 
 # Step 4: write third function to get user's zip code in correct format
 def zip_code(z_code):
-
-
     """Get a five-number zip code from user"""
-    
-    length_of_zip_code = len(z_code)
 
     try:
         z_code = int(z_code)
@@ -77,30 +70,28 @@ zip_code(z_code)
 
 # Step 4: write third function to get employee ID
 def validate_employee_id(employee_id):
-
-
     """Validate employee id"""
-    
+
     employee_id_validation = True
 
     length_of_employee_id = len(employee_id)
     if length_of_employee_id != EMPLOYEE_ID_LENGTH:
         employee_id_validation = False
-    
+
     employee_id_hyphen = employee_id[2]
     if employee_id_hyphen != employee_id[2]:
         employee_id_validation = False
-    
+
     two_letters_in_employee_id = employee_id[:2]
     for letter in two_letters_in_employee_id:
         if letter not in LETTERS:
             employee_id_validation = False
-    
+
     four_numbers_in_employee_id = employee_id[3:]
     for number in four_numbers_in_employee_id:
         if number not in NUMBERS:
             employee_id_validation = False
-    
+
     if employee_id_validation == True:
         print("There are no errors with this ID.")
     else:
