@@ -7,13 +7,13 @@ Created on Thu May 10 15:34:22 2018
 """
 
 # Import string and add constants
-import string  
+import string
 EMPLOYEE_ID_LENGTH = 7
 
 LETTERS = list(string.ascii_lowercase)
 NUMBERS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
-# Step 1: get user input: 
+# Step 1: get user input:
 f_name = input("Enter your first name: ")
 normalized_f_name = f_name.lower()
 
@@ -36,7 +36,7 @@ def first_name(f_name):
 
     if len(f_name) == 1:
         print(f"\'{f_name}\' is not a valid first name. It's too short.")
-    
+
 
 first_name(normalized_f_name)
 
