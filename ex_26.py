@@ -16,8 +16,8 @@ apr_as_decimal = apr / 100
 apr_daily_rate = apr_as_decimal / 365
 
 def calc_months_until_paid_off(credit_card_balance, apr, monthly_payment):
-    
-    
+
+
     """Write a function to determine the number of months until credit card is paid off"""
 
     number_of_months_to_pay_cc = (-(1 / 30) * \
