@@ -6,24 +6,26 @@ Created on Thu May 10 15:34:22 2018
 @author: amyhaddad
 """
 
-# Step 1: print directions
-print("Enter two strings and I'll tell you if they are anagrams:")
+print("Enter two strings and I'll tell you if they're anagrams. ")
 
-# Step 2: get input from user on two words
-user_string_1 = input("Enter string one: ")
-user_string_2 = input("Enter string two: ")
+string1 = input("Enter one string: ")
+string2 = input("Enter second string: ")
 
-# Step 3: write a function to see if the words are anagrams
-def is_anagram(word_1, word_2):
-    """Compare two strings to determine if they are anagrams"""
-    word_1_length = len(word_1)
-    word_2_length = len(word_2)
 
-    if word_1_length == word_2_length:
-        sorted_word_1 = sorted(word_1)
-        sorted_word_2 = sorted(word_2)
-        if sorted_word_1 == sorted_word_2:
-            print(f"\'{word_1}\' and \'{word_2}\' are anagrams.")
+def isAnagram(string1, string2):
+    """Test to see if string1 and string2 are anagrams"""
+
+    length_of_string1 = len(string1)
+    length_of_string2 = len(string2)
+
+    if length_of_string1 != length_of_string2:
+        print(f"{string1.title()} and {string2} are not anagrams.")
     else:
-        print(f"\'{word_1}\' and \'{word_2}\' are not anagrams.")
-user_input = is_anagram(user_string_1, user_string_2)
+        sorted_string1 = sorted(string1)
+        sorted_string2 = sorted(string2)
+        if sorted_string1 == sorted_string2:
+            print(f"{string1.title()} and {string2} are anagrams!")
+        else: 
+            print(f"{string1.title()} and {string2} are not anagrams.")
+
+isAnagram(string1, string2)
