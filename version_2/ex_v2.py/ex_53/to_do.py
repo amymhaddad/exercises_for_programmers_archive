@@ -5,41 +5,47 @@
 #the instance deals with one indiviudal to do list
 
 #ask for input outside of the class and feed input into class
-
 #What are the nouns in the prob statement? Those should be attributes
+
+
+def get_tasks():
+    task_list = []
+    while True:
+        user_task = input("Enter a task. Or hit return if finished: ")
+        if user_task == '':
+            break
+        else:
+            task_list.append(user_task)
+            
+    return task_list
+
+copy = get_tasks()
+
+to_dos = 'tasks.py'
+with open(to_dos, 'w') as f_object:
+    for task in copy:
+        f_object.write(task)
+        f_object.write('\n')
+
 
 class ToDoList(object):
     
-
-    def __init__(self, task, completed_task='', show_task = ''):
-        self.tasks = task
-        self.completed_task = completed_task
-        self.show_task = show_task
-
-        # self.usertask = self.add_task_to_list(task)
+    def __init__(self, file, new_task = ''):
+        self.file = file
+        self.new_task = new_task 
         
-    # def add_task_to_list(self, task):
-    #     if task == '':
-    #         continue
-    #     else:
-    #         self.tasks.append(task)
-    #     print(self.tasks)
+    def add_new_task(self):
+        with open(self.file, 'w') as f_object:
+            f_object.write(self.new_task)
+    
+    def show_tasks(self):
+        with open(self.file) as f_object:
+            tasks = f_object.readlines()
+        print(tasks)
 
-task = []
-while True:
-    user_task = input("Enter a task. Or hit return if finished: ")
-    if user_task == '':
-        break
-    else:
-        task.append(user_task)
-
-todo = ToDoList(task, 'cook')
+t1 = ToDoList(to_dos, 'sleep')
+print(t1.show_tasks())
 
 
-###Create methods: add a new task, and possibly set a method to completed task (ie, delete a task) and showtask // otherwise take these defaults and make them methods 
-
-
-#create an "add more tasks" method
-#create display tasks method
-#create get a task method
-#create delete a task methodn--> 
+#Find a way to perm store tasks so I don't have to go through the input prompt
+#Create method to delete a task
