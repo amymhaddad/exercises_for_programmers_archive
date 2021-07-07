@@ -6,24 +6,35 @@ Created on Thu May 10 15:34:22 2018
 @author: amyhaddad
 """
 
-# Step 1: create a list of names
-names = ['Theo', 'Tom', 'Paul', 'Sam', 'Sally']
+# Step 1: create list of names and find length of list
+employee_list = ['john johns', 'mary kay', 'sue smith', 'paul haddad', 'nina jones']
 
-# Make this list lowercase
-names_lowercase = [names.lower() for names in ['Theo', 'Tom', 'Paul', 'Sam', 'Sally']]
+total_employees = len(employee_list)
 
-# Step 2: use loop to print each name from list
-print("There are five employees:")
-for name in names_lowercase:
-    print(name.capitalize())
+# Step 2: print total names, then write a for loop to print all employee names
+print(f"There are {total_employees} total employees: ")
+for employee in employee_list:
+    print(employee.title())
 
-# Step 3: get input on employee to remove
-employee_removal = input("Which employee needs to be removed? ")
+print('\n')
+        
+# Step 3: ask user which employee to remove and remove employee from list
+employee_to_remove = input("Which employee should I remove? ")
+normalized_employee_to_remove = employee_to_remove.lower()
 
-# Step 4: remove employee from list
-names_lowercase.remove(employee_removal)
+if normalized_employee_to_remove not in employee_list:
+    print("Error: name not found.")
+    sys.exit()
 
-# Step 5: print list of remaining employees
-print("These are the remaining employees:")
-for name in names_lowercase:
-    print(name.capitalize())
+if normalized_employee_to_remove in employee_list:
+    employee_list.remove(normalized_employee_to_remove)
+
+print('\n')
+
+total_employees = len(employee_list)
+
+# Step 4: print remaining total employees and their names
+print(f"There are {total_employees} remaining employees: ")
+for employee in employee_list:
+    print(employee.title())
+    
